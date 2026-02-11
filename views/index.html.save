@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAKE MUSIC WORK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="navbar">
+    <div class="logo-container">
+     <img class="logo" src="https://bucket-c6sv48.s3.us-east-1.amazonaws.com/Kathi's%20Website/Logo1[1].PNG" alt="Band Logo" >
+    </div>
+    <ul class="nav-links">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <section id="hero">
+    <div class="slideshow">
+      <div class="slide img1 active"></div>
+      <div class="slide img2"></div>
+      <div class="slide img3"></div>
+      <div class="overlay-text-group">
+        <div class="overlay-logo-container">
+          <img class="overlay-logo" src="https://bucket-c6sv48.s3.us-east-1.amazonaws.com/Kathi's%20Website/Logo1[1].PNG" alt="Band Logo">
+        </div>
+        <h1 class="overlay-brand">FOX AGENCY MANAGEMENT</h1>
+        <h2 class="overlay-slogan">MAKE MUSIC WORK</h2>
+      </div>
+    </div>
+  </section>
+
+<!-- Intro Section --> 
+  <section id="intro">
+    <h2>Introduction</h2>
+    <p> FoxArtistManagement ist ein Künstlermanagement speziell für aufstrebende DIY-Bands aus dem Rock-, Metal-und Punkbereich in und um MFoxArtistManagement ist ein Künstlermanagement speziell für aufstrebende DIY-Bands FoxArtistManagement ist ein Künstlermanagement speziell für aufstrebende DIY-Bands aus dem Rock-, Metal- und Punkbereich in und um München.</p>
+    <p> 
+
+
+ </p> </section> <!-- Services Section --> <h2>Our 
+    Services</h2>
+      <li><strong>Brand Kits:</strong> Logos, typography, and moodboards that shout your identity</li> 
+      <li><strong>Press Packages:</strong> Pitch-perfect EPKs and tour-ready media kits</li>
+  </section> 
+
+<!-- About Section --> 
+  <section id="about">
+    <h2>About</h2> 
+    <p>I’m Kathi — music lifer, branding strategist, and creative mind behind FAM. Let’s turn your sound into movement.</p>
+  </section> 
+
+<!-- Contact Section --> 
+  <section id="contact">
+    <h2>Get In Touch</h2> 
+    <form id="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your name" required /> 
+        <input type="email" placeholder="Your email" required />
+      </div>
+      <textarea name="message" placeholder="Your message" required></textarea> 
+      <button type="submit">Send Message</button>
+    </form> 
+  </section>
+<script src="/script.js"></script>
+
+</body>
+</html>
