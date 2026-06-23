@@ -1,0 +1,483 @@
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  font-size: 24px;
+}
+
+element {
+  color: crimson;
+}
+
+#navbar {
+  background-color: black;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(220, 20, 60, 0.6);
+  height: 80px;
+  position: sticky;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#navbar .logo {
+  display: flex;
+  align-items: center;
+  max-height: 74px;
+}
+
+#navbar .logo img {
+  max-height: 74px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/*Nav links*/
+#navbar .nav-links {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;  
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+#navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Teko', sans-serif;
+  font-size: 3rem;
+  font-weight: 700; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+#navbar .nav-links a:hover {
+  color: crimson;
+}
+
+/* Headers */
+section h2 {
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+/*Slideshow*/
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'BlackMustang';
+  src: url('/fonts/Black_Mustang[1].ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#hero {
+  position: relative; 
+  height: 100vh; 
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.slideshow::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 10%;
+  width: 100%;
+  height: 3px;
+  background: crimson;
+  filter: blur(20px);
+  opacity: 0.8;
+  pointer-events; none;
+  z-index: 1;
+}
+
+/* Force slideshow visibility for debug */
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide.img1 {
+  background-image: url('https://bucket-c6sv48.s3.us-east-1.amazonaws.com/Kathi%27s%20Website/stageviewlarge.JPG');
+}
+
+.slide.img2 {
+  background-image: url('https://bucket-c6sv48.s3.us-east-1.amazonaws.com/Kathi%27s%20Website/guitarclose.JPG');
+}
+
+.slide.img3 {
+  background-image: url('https://bucket-c6sv48.s3.us-east-1.amazonaws.com/Kathi%27s%20Website/stageviewclose.JPG');
+}
+
+/*OVERLAY */
+
+.overlay-text-group {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align: center;
+  padding: 0.24rem;
+  z-index: 1000;
+  font-family: 'BlackMustang', sans-serif;
+  white-space: nowrap;
+  text-shadow: 
+    -1px -1px 0 #000, 
+     1px -1px 0 #000, 
+    -1px 1px 0 #000, 
+     1px 1px 0 #000;
+  line-height: 1;
+}
+
+.overlay-logo-container {
+  display: flex;
+  justify-content: center;
+  margin: -2rem 0 1.5rem;
+}
+
+.overlay-logo {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-brand {
+  font-size: 5rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 200;
+  max-wdith: 90vw;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 1px 1px 12px rgba(220, 20, 60, 0.4);
+}
+
+.overlay-slogan {
+  font-size: 3.5rem;
+  margin: 0.2rem 0;
+  font-family: 'BlackMustang', sans-serif;
+  text-transform: uppercase;
+  color: #c12823;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+
+
+/*Section*/
+section {
+  pading: 100px 10vw;
+  bakcground-color: #0a0a0a;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  border-bottom: 1px solid #222;
+}
+
+/*Section Headings*/
+section h2,
+section h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.subheading {
+  font-family: 'Teko', sans-serif;
+  color: crimson;
+  text-align: center;
+  margin: 0.5rem 0 2rem;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+/* Parapgraph Content*/
+.intro-section p,
+.about-section p,
+.contact-section p {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 700;
+  color: #c12823;
+}
+
+/*Intro*/
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro-image {
+  position: relative;
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.intro-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+  text-align: left;
+}
+
+/*Services - Special card layout */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.card-consulting,
+.card-branding,
+.card-management {
+  flex: 1 1 calc(33.33% - 2rem);
+  background-color: #111;
+  padding: 2rem;
+  border: 1px solid #333;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(193, 40, 35, 0.2);
+}
+
+.services-card h3 {
+  font-size: 2.4rem;
+  color: #c12823;
+  margin-bottom: 1rem;
+}
+
+.services-card p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.card-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  jusitfy-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  flex: 1 1 50%;
+}
+
+.card_images {
+  flex: 1 1 45%;
+  diaplsy: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-images img {
+  width: 100%;
+  max-height: 200px;
+  max-width: 250px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.reverse .card-content {
+  flex-direction: row-reverse;
+}
+
+.diagonal-stack {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.diagonal-stack img {
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.img-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.img-top {
+  position: absolute;
+  top: -50px;
+  left: 60px;
+  z-index: 2;
+}
+
+/*about*/
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-images {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.about-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+/* contact box */
+#contact {
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 5px crimson;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px crimson;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: darkred;
+}
+
+.site-footer {
+  background-color: #000;
+  color: #c12823;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-top: 1px solid #c12823;
+}
+
